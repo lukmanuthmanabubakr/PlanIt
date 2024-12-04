@@ -1,0 +1,25 @@
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background: var(--nav-login-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.searchContainer:focus {
+  border: 1px solid var(--text-color);
+}
+
+.searchContainer input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  color: var(--text-color);
+  background: none;
+}

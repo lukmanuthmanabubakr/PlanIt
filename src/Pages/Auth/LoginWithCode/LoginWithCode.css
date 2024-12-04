@@ -1,0 +1,93 @@
+/* LoginWithCode.css */
+
+.lWithCodePassAspect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-muted);
+}
+
+.lWithCodePassAspect .loginContainer {
+  background-color: var(--background-light);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--box-shadow-light);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.lWithCodePassAspect .loginContainer h2 {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.lWithCodePassAspect .emailInput {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid var(--input-border);
+  border-radius: 50px;
+  font-size: 16px;
+  color: var(--text-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background: none;
+}
+
+.lWithCodePassAspect .emailInput:focus {
+  outline: none;
+  border-color: var(--input-focus);
+}
+
+.lWithCodePassAspect button {
+  background-color: var(--button-primary);
+  color: var(--nav-login-color);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.lWithCodePassAspect button:hover {
+  background-color: var(--button-primary-hover);
+}
+
+.lWithCodePassAspect .cEmail {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.lWithCodePassAspect .UserDontHaveAccount {
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.lWithCodePassAspect .UserDontHaveAccount b {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.lWithCodePassAspect .UserDontHaveAccount b:hover {
+  text-decoration: underline;
+}
+
+.lWithCodePassAspect span {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--text-muted);
+}

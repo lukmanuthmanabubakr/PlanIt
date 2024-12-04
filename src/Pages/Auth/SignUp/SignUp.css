@@ -1,0 +1,120 @@
+/* Login Page Container */
+.registerAspect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--background-muted); /* Light Muted Background */
+  padding: 20px;
+}
+
+.registerAspect .loginContainer {
+  background-color: var(--background-light); /* White Background */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px var(--box-shadow-light);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.registerAspect .loginContainer h2 {
+  font-size: 2.2rem;
+  color: var(--primary-color); /* Primary Color */
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.registerAspect .loginContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.registerAspect .loginContainer input {
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 1rem;
+  background: none;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px;
+}
+
+.registerAspect .loginContainer input:focus {
+  border-color: var(--input-focus); /* Focus Border */
+  box-shadow: 0 0 5px rgba(255, 87, 34, 0.4); /* Subtle Primary Shadow */
+}
+
+.registerAspect .passwordStrength {
+  background: var(--border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  margin-top: 5px;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.registerAspect .passwordStrength ul {
+  list-style: none;
+  padding: 0;
+}
+
+.registerAspect .passwordStrength li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted); /* Muted Text */
+}
+
+.registerAspect .passwordStrength li svg {
+  margin-right: 10px;
+}
+
+.registerAspect button {
+  background-color: var(--button-primary); /* Primary Button */
+  color: var(--nav-login-color); /* White Text */
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.registerAspect button:hover {
+  background-color: var(--button-primary-hover); /* Hover Color */
+  transform: scale(1.05);
+}
+
+.registerAspect .UserDontHaveAccount {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--text-muted); /* Muted Text */
+}
+
+.registerAspect .UserDontHaveAccount a {
+  color: var(--primary-color); /* Primary Color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.registerAspect .UserDontHaveAccount a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registerAspect .loginContainer {
+    padding: 25px;
+  }
+}

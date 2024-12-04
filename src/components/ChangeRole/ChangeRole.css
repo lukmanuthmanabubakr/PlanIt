@@ -1,0 +1,115 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better focus */
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: var(--background-light); /* Use the light background variable */
+    border: 2px solid var(--nav-logo); /* Primary color as border */
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out; /* Smooth appearance */
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .modal-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+  }
+  
+  .close-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--error); /* Use error color for close */
+    transition: color 0.2s ease;
+  }
+  
+  .close-icon:hover {
+    color: var(--warning); /* Hover color for close icon */
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-muted);
+    color: var(--text-color);
+    font-size: 1rem;
+    appearance: none; /* Remove default styling */
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: var(--button-primary-hover);
+    box-shadow: 0 0 5px var(--button-primary-hover); /* Subtle glow */
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Spacing between buttons */
+  }
+  
+  .submit-btn,
+  .cancel-btn {
+    flex: 1; /* Equal width for buttons */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .submit-btn {
+    background-color: var(--task-complete);
+    color: #fff;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--task-pending);
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .cancel-btn {
+    background-color: var(--task-overdue);
+    color: #fff;
+  }
+  
+  .cancel-btn:hover {
+    background-color: var(--error);
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

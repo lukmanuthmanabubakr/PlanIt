@@ -1,0 +1,168 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../../Assets/standard-todo.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Overlay Effect */
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Moving Circles */
+.hero .circles {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero .circles span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: move 5s linear infinite;
+}
+
+.hero .circles span:nth-child(1) {
+  top: 10%;
+  left: 15%;
+  animation-duration: 6s;
+  animation-delay: 0s;
+}
+
+.hero .circles span:nth-child(2) {
+  top: 40%;
+  left: 60%;
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+
+.hero .circles span:nth-child(3) {
+  top: 70%;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+
+.hero .circles span:nth-child(4) {
+  top: 20%;
+  left: 80%;
+  animation-duration: 4.5s;
+  animation-delay: 1.5s;
+}
+
+.hero .circles span:nth-child(5) {
+  top: 50%;
+  left: 40%;
+  animation-duration: 6.5s;
+  animation-delay: 2.5s;
+}
+
+/* Circle Movement Animation */
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-20px, 30px);
+  }
+  50% {
+    transform: translate(30px, -20px);
+  }
+  75% {
+    transform: translate(-30px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Content Section */
+.hero .content {
+  position: relative;
+  z-index: 2;
+  color: var(--background-light);
+  padding: 0 20px;
+}
+
+.hero .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  animation: fade-up 1s ease-in-out;
+  color: var(--background-light);
+}
+
+@media (min-width: 768px) {
+  .hero .title {
+    font-size: 4rem;
+  }
+}
+
+.hero .subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: var(--border-color);
+  animation: fade-in 1.5s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .hero .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+.hero .cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--nav-login-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 6px var(--box-shadow-light);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+  background-color: var(--button-primary-hover);
+  transform: scale(1.05);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,70 @@
+/* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+}
+
+
+:root {
+  /* Navigation Bar */
+  --nav-bg: #FAF7F2; /* Background */
+  --nav-logo: #FF5722; /* Logo color */
+  --nav-links: #FF5722; /* Links */
+  --nav-links-hover: #FFC107; /* Links on hover */
+  --nav-login-button: #FF5722; /* Login button background */
+  --nav-login-color: #FFFFFF; /* Login button text */
+  --nav-login-button-hover: #FFC107; /* Login button hover */
+  --nav-menu-button: #FF5722; /* Mobile menu button */
+  
+  /* General Colors */
+  --primary-color: #FF5722; /* Primary for highlights, buttons, etc. */
+  --secondary-color: #FFC107; /* Secondary for accents, badges */
+  --background-light: #FFFFFF; /* Main light background */
+  --background-muted: #F1F1F1; /* Muted sections, forms */
+  --text-color: #212121; /* Primary text color */
+  --text-muted: #757575; /* Muted text */
+  --border-color: #E0E0E0; /* Borders for cards, input fields */
+
+  /* Task Status Colors */
+  --task-complete: #4CAF50; /* Completed tasks */
+  --task-pending: #FFC107; /* Pending tasks */
+  --task-overdue: #F44336; /* Overdue tasks */
+
+  /* Buttons and Interactions */
+  --button-primary: #FF5722; /* Primary buttons */
+  --button-primary-hover: #E64A19; /* Hover state for primary buttons */
+  --button-secondary: #FFC107; /* Secondary buttons */
+  --button-secondary-hover: #FFA000; /* Hover state for secondary buttons */
+
+  /* Alerts and Notifications */
+  --success: #4CAF50; /* Success messages */
+  --warning: #FFC107; /* Warnings */
+  --error: #F44336; /* Errors */
+  --info: #03A9F4; /* Informational messages */
+
+  /* Shadows */
+  --box-shadow-light: rgba(0, 0, 0, 0.1); /* Subtle shadows for light mode */
+  --box-shadow-dark: rgba(0, 0, 0, 0.5); /* Shadows for dark mode */
+
+  /* Additional States */
+  --input-border: #E0E0E0; /* Input fields default border */
+  --input-focus: #FF5722; /* Input fields focus border */
+}

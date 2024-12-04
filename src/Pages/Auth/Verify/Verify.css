@@ -1,0 +1,51 @@
+.verifyAccount {
+  background-color: var(--background-muted);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-shadow: var(--box-shadow-light);
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.verifyAccount h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.verifyAccount p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+.verifyAccount button {
+  padding: 10px 20px;
+  background-color: var(--button-primary);
+  color: var(--nav-login-color);
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.verifyAccount button:hover {
+  background-color: var(--button-primary-hover);
+}
+
+.verifyAccount button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 87, 34, 0.3);
+}
+
+.verifyAccount button:active {
+  background-color: var(--primary-color);
+}
