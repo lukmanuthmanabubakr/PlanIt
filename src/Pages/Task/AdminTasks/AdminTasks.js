@@ -39,14 +39,7 @@ const AdminTasks = () => {
   const { tasks, isLoading, isError, isSuccess, message } = useSelector(
     (state) => state.tasks
   );
-  const { user } = useSelector((state) => state.auth);
-
-  const initialState = {
-    isVerified: user?.isVerified ?? null,
-  };
-
-  const [profile, setProfile] = useState(initialState);
-
+ 
   const [isModalOpen, setModalOpen] = useState(false);
   const [taskToDelete, setTaskToDelete] = useState(null);
   const [activeMenu, setActiveMenu] = useState(null); // Track open menu
@@ -94,7 +87,6 @@ const AdminTasks = () => {
 
   return (
     <>
-      {!isLoading && profile.isVerified === false && <Notification />}
       <div className="admin-tasks">
         <h1 className="tasks-heading">All Tasks</h1>
         {isLoading ? (

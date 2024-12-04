@@ -6,18 +6,12 @@ import { createTask } from "../../../redux/features/task/taskSlice";
 import useRedirectLoggedOutUser from "../../../customHook/useRedirectLoggedOutUser";
 import ButtonLoader from "../../../components/ButtonLoader/ButtonLoader";
 import { useNavigate } from "react-router-dom";
-import Notification from "../../../components/Notification/Notification";
 
 const CreateTask = () => {
   const [title, setTitle] = useState("");
   const { user } = useSelector(
     (state) => state.auth
   );
-  const initialState = {
-    isVerified: user?.isVerified ?? null, 
-  };
-
-  const [profile, setProfile] = useState(initialState);
   const [description, setDescription] = useState("");
   const [dueDate, setDueDate] = useState("");
   const dispatch = useDispatch();
@@ -51,7 +45,6 @@ const CreateTask = () => {
 
   return (
     <>
-      {!isLoading && profile.isVerified === false && <Notification />}
       <div className="task-page">
         <h1>Create a New Task</h1>
         <form onSubmit={handleSubmit} className="task-form">
