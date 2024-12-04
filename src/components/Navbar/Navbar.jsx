@@ -62,8 +62,6 @@ const Navbar = () => {
         <ShowOnLogin>
           <NavLink to="/admin-tasks">Tasks</NavLink>
         </ShowOnLogin>
-        <NavLink to="/about">Attachments</NavLink>
-        <NavLink to="/contact">About</NavLink>
         <NavLink to="/user-profile" className="profileText">
           Profile
         </NavLink>
@@ -92,8 +90,6 @@ const Navbar = () => {
                 <ShowOnLogin>
                   <NavLink to="/admin-tasks">Tasks</NavLink>
                 </ShowOnLogin>
-                <NavLink to="/about">Attachments</NavLink>
-                <NavLink to="/contact">About</NavLink>
                 <ShowOnLogin>
                   <NavLink to="/user-profile">Profile</NavLink>
                 </ShowOnLogin>
