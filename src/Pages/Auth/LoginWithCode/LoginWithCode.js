@@ -46,7 +46,7 @@ const LoginWithCode = () => {
 
   useEffect(() => {
     if (isSuccess && isLoggedIn) {
-      navigate("/user-profile");
+      navigate("/admin-tasks");
     }
 
     dispatch(RESET());

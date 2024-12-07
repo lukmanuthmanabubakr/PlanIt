@@ -29,9 +29,9 @@ const ChangeRole = ({ _id, email }) => {
     };
 
     const emailData = {
-      subject: "Account Role Changed - TrackItNow",
+      subject: "Account Role Changed - PlanIt",
       send_to: email,
-      reply_to: "noreply@trackitnow",
+      reply_to: "noreply@PlanIt",
       template: "changeRole",
       url: "/login",
     };

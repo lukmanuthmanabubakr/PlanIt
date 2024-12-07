@@ -6,7 +6,7 @@
     backdrop-filter: blur(10px);
   }
   
-  .trackitnow-loader {
+  .PlanIt-loader {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,7 +59,7 @@
 }
 
 /* Loader Wrapper */
-.trackitnow-loader {
+.PlanIt-loader {
   display: flex;
   flex-direction: column;
   align-items: center;

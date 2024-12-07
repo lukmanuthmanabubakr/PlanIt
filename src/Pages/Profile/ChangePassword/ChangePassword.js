@@ -53,9 +53,9 @@ const ChangePassword = () => {
     };
 
     const emailData = {
-      subject: "Password Changed - TrackItNow",
+      subject: "Password Changed - PlanIt",
       send_to: user.email,
-      reply_to: "noreply@trackitnow",
+      reply_to: "noreply@PlanIt",
       template: "changePassword",
       url: "/forgot",
     };
